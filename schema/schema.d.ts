@@ -1,5 +1,10 @@
+// Semver:
+// Major (X.x.x): Removed Questions
+// Minor (x.X.x): Added Questions
+// Patch (x.x.x): Fixed Question Typos or Errors
 export type StudySet = {
-	ver: '0.0.1';
+	schemaVer: '0.1.0';
+	ver: [major: number, minor: number, patch: number];
 	id: string;
 	name: string;
 	questions: StudyQuestion[];
